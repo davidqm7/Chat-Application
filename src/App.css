@@ -1,0 +1,218 @@
+/* General App Layout */
+.App {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #4a90e2;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  /* Chat Box Container */
+  .chat-box {
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Message Bubble Styling */
+  .message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+  
+  .message img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .message p {
+    background-color: #e0f7fa;
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 70%;
+    word-wrap: break-word;
+    font-size: 14px;
+  }
+  
+  /* User's Own Message */
+  .message.own p {
+    background-color: #c8e6c9;
+    align-self: flex-end;
+  }
+  
+  /* Input Form */
+  form {
+    display: flex;
+    margin-top: auto;
+  }
+  
+  input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    margin-right: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    background-color: #357ab9;
+  }
+  
+  button:active {
+    background-color: #2d66a2;
+  }
+  
+  /* Scrollbar Styling */
+  .chat-box::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .chat-box::-webkit-scrollbar-thumb {
+    background-color: #4a90e2;
+    border-radius: 10px;
+  }
+  
+  /* Authentication Button */
+  header button {
+    background-color: white;
+    color: #4a90e2;
+    border: 1px solid #4a90e2;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  header button:hover {
+    background-color: #4a90e2;
+    color: white;
+  }
+  
+  header button:active {
+    background-color: #357ab9;
+    border-color: #357ab9;
+  }
+  
+  /* User Information */
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info span {
+  font-size: 16px;
+  color: white;
+}
+
+/* Sign Out Button */
+.user-info button {
+  background-color: white;
+  color: #4a90e2;
+  border: 1px solid #4a90e2;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.user-info button:hover {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.user-info button:active {
+  background-color: #357ab9;
+}
+
+/* Adjust form for emoji button */
+form {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+form input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  margin-right: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-left: 10px;
+}
+
+form button.emoji-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+}
+
+form button:hover {
+  background-color: #357ab9;
+}
+
+form button:active {
+  background-color: #2d66a2;
+}
